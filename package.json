@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "typescript-react-starter",
+  "version": "1.0.0",
+  "description": "TypeScript React starter",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext js,ts,tsx && tsc -p . --noEmit",
+    "build": "rimraf dist && webpack --mode=production",
+    "test": "jest",
+    "dev": "webpack serve --mode=development",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenneth-gray/typescript-react-starter.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Kenneth Gray",
+  "bugs": {
+    "url": "https://github.com/kenneth-gray/typescript-react-starter/issues"
+  },
+  "homepage": "https://github.com/kenneth-gray/typescript-react-starter#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/react-dom": "^17.0.6",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "prettier": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.2",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
